@@ -1,0 +1,51 @@
+.list-section {
+    &__title {
+        margin: 0;
+        @include item-list-title;
+    }
+
+    &__line {
+        width: 80px;
+        height: 2px;
+        background: $blue-font;
+        border: none;
+        margin: 10px auto 10px 0;
+        box-shadow: 0px 2px 0px #D1E1FE;
+    }
+
+    &__line-list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        background: #FFFFFF;
+        box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+    }
+
+    &__item-title {
+
+        @include item-title;
+
+    }
+
+    &__item-text {
+        @include item-text;
+    }
+
+    @include large-screan {
+        margin: 0 auto;
+        max-width: 1185px;
+
+
+        &__line {
+            position: relative;
+            left: -40px;
+        }
+
+        &__item-text {
+            margin-top: 20px;
+        }
+    }
+}

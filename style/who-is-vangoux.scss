@@ -1,0 +1,43 @@
+.who-is-vangoux {
+    margin: 120px 60px;
+
+    &__list {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+    }
+
+    @include large-screan {
+        margin: 70px auto 0;
+        padding: 0 30px;
+
+        &__list {
+            margin-top: 19px;
+        }
+    }
+}
+
+.who-is-vangoux-item {
+    margin-top: 20px;
+    width: 48.07%;
+    padding: 20px;
+    background-color: white;
+
+    &__blue-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin-top: 20px;
+    }
+
+    @include large-screan {
+        width: 32.14%;
+    }
+}

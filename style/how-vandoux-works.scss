@@ -1,0 +1,78 @@
+.how-vangoux-works {
+    display: block;
+    margin: 120px 55px 0 60px;
+
+    &__list {
+        margin-top: 48px;
+
+        .how-vangoux-works__dash-first,
+        .how-vangoux-works__dash-second {
+            width: 2px;
+            height: 40px;
+            border-left: 2px dashed #1968FC;
+            margin-left: 60px;
+        }
+    }
+
+    @include large-screan {
+        margin: 120px auto 0;
+        padding: 0 30px;
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1125px;
+            flex: 1;
+            margin-top: 38px;
+
+            .how-vangoux-works__dash-first,
+            .how-vangoux-works__dash-second {
+                width: 35px;
+                height: 2px;
+                border-top: 2px dashed #1968FC;
+                margin: 110px 0;
+                flex: 1;
+            }
+
+            .how-vangoux-works__dash-second {
+                margin-top: 150px;
+            }
+        }
+    }
+}
+
+.how-vangoux-works-item {
+    position: relative;
+    padding: 40px;
+
+    &__icon {
+        float: right;
+    }
+
+    &__step {
+        margin: 0;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    &__decor-corner {
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+    }
+
+    @include large-screan {
+        max-width: 325px;
+        height: 225px;
+
+        &~* {
+            margin-top: 40px;
+        }
+
+        &:last-child {
+            margin-top: 80px;
+        }
+    }
+}

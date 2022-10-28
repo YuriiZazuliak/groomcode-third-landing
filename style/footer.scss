@@ -1,0 +1,98 @@
+.footer {
+    width: 100%;
+    background-color: #FBFBFB;
+    margin: 61px 0 90px;
+    padding: 0 40px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include large-screan {
+        margin: 79px 0 0;
+        padding: 0 11.111%;
+    }
+}
+
+.footer-nav {
+    display: none;
+
+    @include large-screan {
+        display: flex;
+        align-items: center;
+        margin-left: 27px;
+
+        &__item {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            width: 120px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-logo-wrap {
+    display: flex;
+    align-items: center;
+    background: rgba(25, 104, 252, 0.05);
+
+    &__logo {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/LogoSmallSolid.png');
+    }
+
+    &__text {
+        margin: 0;
+        font-weight: 600;
+        font-size: 14px;
+        color: $blue-font;
+        width: 200px;
+        text-align: center;
+    }
+}
+
+.footer-social-wrap {
+    display: flex;
+    margin-right: 35px;
+
+    &__facebook {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconFacebook.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+
+    &__instagram {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconInstagram.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+
+    @include large-screan {
+        margin: 0;
+    }
+}
+
+.footer-picture {
+    position: relative;
+    right: -12px;
+    height: 64px;
+    align-self: end;
+
+    @include large-screan {
+        right: -24px;
+        height: 108px;
+    }
+}

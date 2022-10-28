@@ -1,0 +1,42 @@
+@mixin large-screan {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+@mixin blue-button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+    height: 50px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    background-color: $blue-font;
+}
+
+@mixin item-list-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+@mixin item-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #1967FA;
+}
+
+@mixin item-text {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $main-font;
+}

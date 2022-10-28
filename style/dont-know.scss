@@ -1,0 +1,67 @@
+.dont-know {
+    margin-top: 60px;
+    padding: 60px;
+    width: 100%;
+    background-color: $blue-font;
+
+    &__title {
+        color: white;
+        letter-spacing: 0.5px;
+    }
+
+    &__text {
+        max-width: 620px;
+        color: white;
+        margin-top: 35px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    &__button {
+        width: 320px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: $blue-font;
+        margin-top: 20px;
+        border: none;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    @include large-screan {
+        margin-top: 80px;
+        max-width: 100%;
+        position: relative;
+        padding: 80px 11.11%;
+
+        &__title {
+            letter-spacing: 0.4px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__text {
+            margin-top: 48px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__button {
+            margin-top: 20px;
+        }
+
+        &__img {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 1px;
+            z-index: 0;
+        }
+    }
+}

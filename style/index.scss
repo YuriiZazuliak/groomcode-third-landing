@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+@import './variables.scss';
+@import './mixines.scss';
+@import './section-list-styles.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    color: $main-font;
+}
+
+body {
+    min-width: 640px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: $background;
+
+    @include large-screan {
+        background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png');
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}
+
+@import './header.scss';
+@import './upload&comment.scss';
+@import './how-vandoux-works.scss';
+@import './features.scss';
+@import './who-is-vangoux.scss';
+@import './can-you-build.scss';
+@import './dont-know.scss';
+@import './our-story.scss';
+@import './footer.scss';

@@ -1,0 +1,61 @@
+.our-story {
+    padding: 60px 60px 0;
+    background-color: white;
+
+    &__title {}
+
+    &__list {
+        margin-top: 42px;
+    }
+
+    @include large-screan {
+        margin: 120px auto 0;
+        padding: 0px 30px;
+
+        &__list {
+            margin-top: 49px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.our-story-item {
+    display: flex;
+    box-shadow: none;
+    margin-bottom: 15px;
+
+    &__picture {
+        width: 40px;
+        height: 33px;
+        margin-right: 20px;
+    }
+
+    &__text-content {}
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    &__text {
+        margin: 17px 0 29px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: black;
+    }
+
+    &__dr-who-href {}
+
+    @include large-screan {
+        max-width: 490px;
+        flex: 1;
+
+        &__text {
+            letter-spacing: 0.06px;
+        }
+    }
+}

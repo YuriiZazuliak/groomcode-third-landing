@@ -1,0 +1,150 @@
+//header
+.header {
+    max-width: 1180px;
+    display: block;
+    padding: 40px 80px;
+
+    &__logo-wrap {
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo-img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    &__logo-text {
+        flex: 1 1;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: $blue-font;
+        margin-right: 10px;
+    }
+
+    @include large-screan {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        margin: 0 auto;
+    }
+}
+
+.header-navigation {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 64.6%;
+
+
+    &__list {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        flex: 1;
+        margin-right: 7.5%;
+
+        &-item {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: black;
+            // margin-right: 10px;
+        }
+    }
+
+    &__button {
+        width: 180px;
+        @include blue-button;
+    }
+
+    @include large-screan {
+        display: flex;
+    }
+}
+
+
+
+
+//headline
+.headline {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 40px;
+
+
+    &__img {
+        position: relative;
+        display: block;
+        width: 599px;
+        margin: 80px auto 0;
+        z-index: -1;
+
+    }
+
+    @include large-screan {
+        margin: 118px auto 0;
+        padding: 0 30px;
+
+        &__img {
+            position: absolute;
+            top: 50px;
+            right: 30px;
+            margin: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.hedline-content {
+    max-width: 680px;
+    padding: 0 80px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        width: 300px;
+        @include blue-button;
+
+        &_large {
+            display: none;
+        }
+    }
+
+    @include large-screan {
+        padding: 0;
+        max-width: 600px;
+
+        &__button {
+            display: none;
+
+            &_large {
+                display: block;
+                width: 300px;
+                @include blue-button;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.can-you-build {
+    margin: 120px 60px 0;
+
+    &__list {
+        margin-top: 38px;
+    }
+
+    @include large-screan {
+        margin: 120px auto 0;
+        padding: 0 30px;
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+.can-you-build-item {
+    margin-bottom: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+
+    &__icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 40px;
+        color: black;
+    }
+
+    @include large-screan {
+        max-width: 540px;
+        width: 48.21%;
+        flex-grow: 1;
+    }
+}
